@@ -13,7 +13,7 @@ const createPokemon = async () => {
       types: pokemon.Type2
         ? [pokemon.Type1.toLowerCase(), pokemon.Type2.toLowerCase()]
         : [pokemon.Type1.toLowerCase()],
-      url: `http://localhost:8000/images/${index + 1}.png`,
+      url: `https://coderdex-be-tthl.onrender.com/images/${index + 1}.png`,
       description: faker.commerce.productDescription(),
       height: `${faker.number.int({ min: 100, max: 500 })}`,
       weight: `${faker.number.int({ min: 10, max: 200 })}`,
